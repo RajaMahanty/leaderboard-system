@@ -53,9 +53,6 @@ const Leaderboard = forwardRef(function Leaderboard(props, ref) {
 
 	return (
 		<div className="glass w-full h-full p-2 sm:p-4 md:p-6 shadow flex flex-col gap-2 rounded-lg sm:rounded-2xl max-w-full mt-2 sm:mt-0">
-			<h2 className="text-2xl sm:text-3xl font-extrabold mb-4 text-black/90 text-center tracking-tight">
-				Leaderboard
-			</h2>
 			<ul
 				ref={listRef}
 				className="space-y-3 w-full h-full overflow-y-auto pr-2"
