@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5000"; // your backend
+const BASE_URL = "leaderboard-system-production.up.railway.app"; // your backend
 
 export async function apiFetch(endpoint, config = {}) {
 	try {
