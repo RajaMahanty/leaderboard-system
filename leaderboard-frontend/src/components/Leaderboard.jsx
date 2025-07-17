@@ -6,9 +6,12 @@ import {
 	useImperativeHandle,
 } from "react";
 import { apiFetch } from "../api/client";
-import io from "socket.io-client";
+import { io } from "socket.io-client";
 
-const socket = io("http://localhost:5000");
+const SOCKET_URL = (
+	import.meta.env.VITE_API_URL || "http://localhost:5000"
+).replace(/\/$/, "");
+const socket = io(SOCKET_URL);
 const PAGE_SIZE = 10;
 
 const Leaderboard = forwardRef(function Leaderboard(props, ref) {
