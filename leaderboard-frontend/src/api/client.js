@@ -1,4 +1,6 @@
-const BASE_URL = "leaderboard-system-production.up.railway.app"; // your backend
+const BASE_URL = (
+	import.meta.env.VITE_API_URL || "http://localhost:5000"
+).replace(/\/$/, "");
 
 export async function apiFetch(endpoint, config = {}) {
 	try {
