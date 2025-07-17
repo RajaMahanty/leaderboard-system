@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* Glassmorphism utility */
+.glass {
+  @apply bg-white/30 backdrop-blur-xl border border-white/40 shadow-xl;
+}
